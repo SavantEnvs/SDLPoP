@@ -1,0 +1,14 @@
+# SDLPoP replay (.P1R) loader + headless game engine: `prince validate <replay>` reads the replay
+# header, the embedded savestate (level struct, room/guard state), the options sections, then plays
+# the recorded moves through the game logic with no window and no sound, and exits at replay end.
+project: savantenvs/SDLPoP
+target: sdlpop_replay
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sdlpop_replay/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/prince validate @@
+    env:
+      SDL_VIDEODRIVER: dummy
+      SDL_AUDIODRIVER: dummy
+    timeout: 3

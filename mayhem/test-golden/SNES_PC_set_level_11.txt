@@ -1,0 +1,7 @@
+Replay started in level 11, room 10.
+Remaining time: 59 min, 59 sec, 11 ticks. (rem_min=60, rem_tick=719)
+Replay ended in level 11, room 12.
+Kid is alive.
+Remaining time: 59 min, 51 sec, 1 ticks. (rem_min=60, rem_tick=613)
+Play duration:  0 min, 8 sec, 10 ticks. (curr_tick=106)
+Play duration matches replay length. (106 ticks)

@@ -1,0 +1,7 @@
+# Commit-image build context: the FULL repo incl. .git; drop only local build outputs.
+mayhem/out/
+mayhem/out-test/
+*.o
+.DS_Store
+*.swp
+*~
